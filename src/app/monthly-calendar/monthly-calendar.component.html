@@ -1,3 +1,5 @@
 <div class="content">
-  <div class="day" *ngFor="let day of _data; let i=index">{{i}}</div>
+  <div class="day" *ngFor="let day of _data; let i=index">
+    <app-day [day]='day'></app-day>
+  </div>
 </div>

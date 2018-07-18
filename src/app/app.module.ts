@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MaterialModule } from './material';
 import { MonthlyCalendarComponent } from './monthly-calendar/monthly-calendar.component';
+import { DayComponent } from './day/day.component';
 
 @NgModule({
-  declarations: [AppComponent, CalendarComponent, MonthlyCalendarComponent],
+  declarations: [AppComponent, CalendarComponent, MonthlyCalendarComponent, DayComponent],
   imports: [BrowserModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent]
