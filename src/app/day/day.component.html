@@ -1,3 +1,8 @@
-<p>
-  {{day}}
-</p>
+<div [class.active]="_active">
+  <span class="day-name" [class.active]="_activeDayOfWeek" *ngIf="day?.showHeader">
+    {{day?.dayOfWeek }}
+  </span>
+  <span class="day" [class.day-name]="day?.showMonthHeader">
+    <span style="display: inline;" *ngIf="day?.showMonthHeader">{{day?.dayOfWeek}}&nbsp;</span>{{day?.date | date: 'd'}}
+  </span>
+</div>

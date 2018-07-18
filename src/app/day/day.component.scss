@@ -1,4 +1,16 @@
 :host {
   margin: 15px;
   display: block;
+  span {
+    display: block;
+  }
+  .day-name {
+    opacity: 0.5;
+    padding-bottom: 3px;
+  }
+}
+
+.active {
+  color: blue;
+  font-weight: bolder;
 }

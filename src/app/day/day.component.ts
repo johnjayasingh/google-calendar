@@ -7,7 +7,12 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class DayComponent implements OnInit {
   @Input() day: any = {};
-  constructor() {}
+  _active: Boolean;
+  _activeDayOfWeek: Boolean;
+  _constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this._active = new Date().getDate() === this.day.date.getDate();
+    this._activeDayOfWeek = new Date().getDay() === this.day.date.getDay();
+  }
 }
